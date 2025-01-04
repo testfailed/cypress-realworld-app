@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import { set } from "lodash";
 import { Request, Response, NextFunction } from "express";
 import { validationResult } from "express-validator";
+// @ts-expect-error: ts(7016)
 import jwt from "express-jwt";
 import jwksRsa from "jwks-rsa";
 
